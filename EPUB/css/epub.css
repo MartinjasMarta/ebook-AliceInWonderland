@@ -1,0 +1,332 @@
+@namespace epub "http://www.idpf.org/2007/ops";
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, a, em, font, img, strong, center, ol, ul, li, caption { 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; 
+}
+
+article, aside, figure, figcaption, 
+footer, header, main, nav, section{
+  display: block;
+}
+
+@font-face {
+    font-family: 'Alegreya bold';
+    src: url(font/alegreya-bold.woff2) format('woff2');
+    font-weight: normal;
+    font-style: bold;
+
+}
+
+@font-face {
+    font-family: 'Alegreya italic';
+    src: url(font/alegreya-italic.woff2) format('woff2');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Alegreya regular';
+    src: url(font/alegreya-regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Alegreya small caps bold';
+    src: url(font/alegreyasc-bold.woff2) format('woff2');
+    font-weight: normal;
+    font-style: bold;
+
+}
+
+@font-face {
+    font-family: 'Alegreya small caps italic';
+    src: url(font/alegreyasc-italic.woff2) format('woff2');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Alegreya small caps regular';
+    src: url(font/alegreyasc-regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-kerning: normal;
+    font-variant: common-ligatures oldstyle-nums proportional-nums;
+    font-feature-settings: "kern", "liga", "clig", "onum", "pnum";
+}
+  
+h1, h2, h3 {
+    font-variant: common-ligatures lining-nums proportional-nums;
+    font-feature-settings: "kern", "liga", "clig", "lnum", "pnum";
+}
+  
+h1, h2, h3 {
+    -ms-adobe-hyphenate: none;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -epub-hyphens: none;
+    hyphens: none;
+}
+
+body{
+    line-height: 1.5em;
+    margin: 1% 2%;
+}
+
+body * {
+    line-height: inherit;
+    font-family: 'Alegreya regular', serif;
+}
+
+h1, h2{
+    font-family: 'Alegreya regular', serif;
+    font-size: 1.5em;
+    text-transform:uppercase;
+    margin-bottom: 2em;
+}
+
+h2{
+    font-size: 1em;
+}
+
+section[epub|type = 'bodymatter chapter'] > p{
+  text-align: left;
+}
+
+.first-word{
+    font-family: 'Alegreya small caps regular', serif;
+    font-variant: small-caps;
+}
+
+section[epub|type = 'chapter'] > h1{
+    margin: 0 auto 3%;
+}
+
+.end{
+    letter-spacing: 2em;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.song1{
+    display: block;
+    margin-top: 1%;
+    margin-left: 10%;
+    font-family: 'Alegreya italic', serif;
+}
+
+.song2{
+    display: block;
+    margin: 2% 20%;
+    font-family: 'Alegreya italic', serif;
+}
+
+.illustration{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+a{
+    color: inherit;
+    -webkit-text-fill-color: inherit;
+    text-decoration: none;
+}
+
+.christmas p{
+    margin-top: 2%;
+}
+
+.caps{
+    text-transform: uppercase;
+}
+
+.smallcaps{
+    font-family: 'Alegreya small caps regular', serif;
+    font-variant: small-caps;
+}
+
+.italic{
+    font-family: 'Alegreya italic', serif;
+    font-style: italic;
+}
+
+.left{
+    text-align: left;
+}
+
+.indent{
+    display: inline-block;
+    text-indent: 1em;
+}
+
+.indent-dva{
+    display: inline-block;
+    text-indent: 2em;
+}
+
+.indent-tri{
+    display: inline-block;
+    text-indent: 3em;
+}
+
+.indent-cetiri{
+    display: inline-block;
+    text-indent: 4em;
+}
+
+.no-padding{
+    padding-left: 0;
+}
+
+section[epub|type = 'toc'] ol{
+    list-style-type: upper-roman;
+    margin-bottom: 2%;
+}
+
+section[epub|type = 'toc']{
+    margin-bottom: 2%;
+}
+
+section[epub|type = 'toc'] ol > li > a{
+    font-variant: small-caps;
+}
+
+section[epub|type = 'backmatter'] > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav[epub|type = 'page-list'] * {
+    display: none;
+}
+
+#signature{
+    display: block;
+    width: 60%;
+    margin: 20% auto;
+}
+
+#main-title{
+    width: 100%;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 2em;
+    line-height: 2em;
+}
+
+.song-preface > p{
+    margin-bottom: 2%;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.publish, section[epub|type = 'copyright-page'], section[epub|type = 'titlepage'], section[epub|type = 'imprint']{
+    margin: 10% auto;
+    text-align: center;
+}
+
+.lit{
+    text-transform: none;
+}
+
+.center{
+    text-align: center;
+}
+
+@supports not (font-variant-caps: small-caps) {
+    element {
+      font-variant: normal;
+      font-feature-settings: "smcp", "onum", "pnum";
+    }
+}
+  
+@supports (font-variant-caps: small-caps) {
+    element {
+      font-variant: normal;
+      font-variant-caps: small-caps;
+    }
+}
+
+.video{
+    max-width: 100%;
+    display: block;
+    margin: 5% auto;
+}
+
+.ch01-img{
+    display: block;
+    width: inherit;
+    margin: 0 auto;
+}
+
+.ch02-img-first{
+    width: inherit;
+    display: block;
+    margin-right: 5%;
+    float: left;
+}
+
+.ch02-img{
+    display: block;
+    width: inherit;
+    margin: 0 auto;
+}
+
+.padding{
+    padding: 5% 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bottom2{
+    display: block;
+    margin-top: 5em;
+}
+
+.bottom1{
+    display: block;
+    margin-top: 20em;
+}
+
+h1[epub|type="title"]{
+    font-size: 2em;
+    margin-top: -2%;
+    line-height: 2em;
+}
+
+.margin-top{
+    margin-top: 5%;
+}
+
+.padding-top{
+    padding-top: 2%;
+}
+
+.ch-title{
+    font-size: 1.5em;
+}
+
+.right{
+    text-align: right;
+}
+

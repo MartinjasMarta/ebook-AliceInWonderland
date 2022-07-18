@@ -1,0 +1,94 @@
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="epub-id">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:identifier id="epub-id">http://lccn.loc.gov/16014724</dc:identifier>
+    <meta refines="#epub-id" property="identifier-type" scheme="onix:codelist5">13</meta>
+    
+    <dc:title id="pub-title">Alice's Adventures in Wonderland</dc:title>
+    <dc:description id="description">A girl named Alice falls into a rabbit hole, where she encounters a world of strange creatures.</dc:description>
+    
+    <dc:language id="pub-lang">en</dc:language>
+    
+    <meta property="dcterms:modified">2021-03-29T04:39:13Z</meta>
+    
+    <dc:creator id="author">Lewis Carroll</dc:creator>
+    <meta refines="#author" property="file-as">Carroll, Lewis, 1832-1898</meta>
+    <meta refines="#author" property="role" scheme="marc:relators" id="role-aut">aut</meta>
+
+    <dc:creator id="illustrator">Joh Tenniel</dc:creator>
+    <meta refines="#illustrator" property="file-as">Joh Tenniel</meta>
+    <meta refines="#illustrator" property="role" scheme="marc:relators" id="role-ill">ill</meta>
+
+    <dc:publisher>London: Macmillan</dc:publisher>
+
+    <dc:date id="pub-date">1928-01-01</dc:date>
+
+    <dc:subject id="subject">FICTION / Classics</dc:subject>
+    <meta refines="#subject" property="authority">BISAC</meta>
+    <meta refines="#subject" property="term">FIC004000</meta>
+
+    <meta property="media:duration" refines="#chapter01-audio">0:01:29.773</meta>
+    <meta property="media:duration">0:25:53.359</meta>
+  
+    <meta property="media:playback-active-class">-epub-media-overlay-active</meta>
+
+  </metadata>
+  <manifest>
+    <item media-type="text/css" id="epub-css" href="css/epub.css"/>
+    <item id="font-Alegreya-regular" href="css/font/alegreya-regular.woff2" media-type="font/woff2"/>
+    <item id="font-Alegreya-bold" href="css/font/alegreya-bold.woff2" media-type="font/woff2"/>
+    <item id="font-Alegreya-italic" href="css/font/alegreya-italic.woff2" media-type="font/woff2"/>
+    <item id="font-AlegreyaSC-regular" href="css/font/alegreyasc-regular.woff2" media-type="font/woff2"/>
+    <item id="font-AlegreyaSC-bold" href="css/font/alegreyasc-bold.woff2" media-type="font/woff2"/>
+    <item id="font-AlegreyaSC-italic" href="css/font/alegreyasc-italic.woff2" media-type="font/woff2"/>
+    <item id="half-title" href="halftitle.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+    <item id="publication" href="publication.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+    <item id="illustration" href="illustration.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+    <item id="title-page" href="title.xhtml" media-type="application/xhtml+xml"/>
+    <item id="copyright-page" href="copyright.xhtml" media-type="application/xhtml+xml"/>
+    <item id="preface" href="preface.xhtml" media-type="application/xhtml+xml"/>
+    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="chapter01" href="chapter01.xhtml" media-type="application/xhtml+xml" media-overlay="chapter01-audio"/>
+    <item id="chapter01-audio" href="chapter01-audio.smil" media-type="application/smil+xml"/>
+    <item id="chapter02" href="chapter02.xhtml" media-type="application/xhtml+xml"/>
+    <item id="easter" href="easter-song.xhtml" media-type="application/xhtml+xml"/>
+    <item id="christmas" href="christmas-song.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="imprint" href="imprint.xhtml" media-type="application/xhtml+xml"/>
+    <item id="works" href="works.xhtml" media-type="application/xhtml+xml"/>
+    <item id="dvor" href="images/dvor.jpg" media-type="image/jpeg" fallback="fall1"/>
+    <item id="fall1" href="images/dvor.svg" media-type="image/svg+xml"/>
+    <item id="logo-svg" href="images/mm-logo.svg" media-type="image/svg+xml"/>
+    <item id="logo-jpg" href="images/mm-logo.jpg" media-type="image/jpeg"/>
+    <item id="signature-svg" href="images/LC-signature.svg" media-type="image/svg+xml"/>
+    <item id="signature-jpg" href="images/LC-signature.jpg" media-type="image/jpeg"/>
+    <item id="ch01-1" href="images/ch01-1.jpg" media-type="image/jpeg"/>
+    <item id="ch01-2" href="images/ch01-2.jpg" media-type="image/jpeg"/>
+    <item id="ch01-3" href="images/ch01-3.jpg" media-type="image/jpeg"/>
+    <item id="ch02-1" href="images/ch02-1.jpg" media-type="image/jpeg"/>
+    <item id="ch02-2" href="images/ch02-2.jpg" media-type="image/jpeg" properties="cover-image"/>
+    <item id="ch02-3" href="images/ch02-3.jpg" media-type="image/jpeg"/>
+    <item id="ch02-4" href="images/ch02-4.jpg" media-type="image/jpeg"/>
+    <item id="poster" href="images/alice.jpg" media-type="image/jpeg"/>
+    <!--<item id="video-alice.mp4" href="video/alice.mp4" media-type="video/mp4"/>-->
+    <item id="video-alice-webm" href="https://vimeo.com/554220697" media-type="video/webm"/>
+    <item id="video" href="video.xhtml" media-type="application/xhtml+xml" properties="remote-resources"/>
+    <item id="audio" href="audio/alice.mp3" media-type="audio/mpeg"/>
+    <item id="script" href="script/script.js" media-type="text/javascript"/>
+
+  </manifest>
+  <spine>
+    <itemref idref="half-title" />
+    <itemref idref="publication" />
+    <itemref idref="dvor"/>
+    <itemref idref="title-page" />
+    <itemref idref="copyright-page" />
+    <itemref idref="preface" />
+    <itemref idref="nav" />
+    <itemref idref="chapter01" />
+    <itemref idref="chapter02" />
+    <itemref idref="easter" />
+    <itemref idref="christmas"/>
+    <itemref idref="imprint"/>
+    <itemref idref="works"/>
+    <itemref idref="video"/>
+  </spine>
+</package>

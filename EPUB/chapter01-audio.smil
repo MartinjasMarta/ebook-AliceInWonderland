@@ -1,0 +1,22 @@
+<smil xmlns="http://www.w3.org/ns/SMIL" xmlns:epub="http://www.idpf.org/2007/ops" version="3.0">
+    <body>
+        <seq id="seq1" epub:textref="chapter01.xhtml#ch01" epub:type="bodymatter chapter">
+            <par id="ch01_title">
+                <text src="chapter01.xhtml#ch01_title"/>
+                <audio src="audio/alice.mp3" clipBegin="0:00:03.022" clipEnd="0:00:05.632"/>
+            </par>
+            <par id="ch01_par01">
+                <text src="chapter01.xhtml#ch01_par01"/>
+                <audio src="audio/alice.mp3" clipBegin="0:00:08.984" clipEnd="0:00:27.172"/>
+            </par>
+            <par id="ch01_par02">
+                <text src="chapter01.xhtml#ch01_par02"/>
+                <audio src="audio/alice.mp3" clipBegin="0:00:28.042" clipEnd="0:00:45.562"/>
+            </par>
+            <par id="ch01_par03">
+                <text src="chapter01.xhtml#ch01_par03"/>
+                <audio src="audio/alice.mp3" clipBegin="0:00:46.307" clipEnd="0:01:32.795"/>
+            </par>
+        </seq>
+    </body>
+</smil>
